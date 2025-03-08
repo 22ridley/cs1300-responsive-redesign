@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Display";
+  src: url("fonts/DMSerifDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Titan";
+  src: url("fonts/TitanOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Caption";
+  src: url("fonts/PTSansCaption-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gudea";
+  src: url("fonts/Gudea-Regular.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eef5fc;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  top: 0;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  background-color: #bad5f2;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  padding-right: 90px;
+  font-weight: bold;
+  font-size: large;
+  font-family: Titan;
+}
+
+.jump {
+  text-decoration: none;
+  color: white;
+  text-shadow: #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px,
+    #19508a 0px 0px 3px, #19508a 0px 0px 3px, #19508a 0px 0px 3px;
+}
+
+.jump:hover {
+  color: #87b6e8;
+}
+h1 {
+  font-family: Titan;
+  color: #19508a;
+  font-size: 40px;
+}
+
+.bubble {
+  padding: 0;
+  margin: 0;
+  width: 30px;
+}
