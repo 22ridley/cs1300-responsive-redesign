@@ -39,8 +39,7 @@ body {
   justify-content: space-between;
   background-color: #bad5f2;
   color: white;
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding: 30px;
   padding-left: 100px;
   padding-right: 90px;
   font-weight: bold;
@@ -67,8 +66,12 @@ body {
 }
 h1 {
   font-family: Titan;
-  color: #19508a;
+  color: #123d69;
   font-size: 40px;
+}
+h2 {
+  font-family: Titan;
+  color: #19508a;
 }
 
 .bubble {
