@@ -54,21 +54,25 @@
             cut off.
           </p>
           <div class="sss">
-            <img
-              src="public/og-phone-screen.png"
-              class="ss"
-              alt="Screenshot of NCSBDE website from phone"
-            />
-            <img
-              src="public/og-tablet-screen.png"
-              class="ss"
-              alt="Screenshot of NCSBDE website from tablet"
-            />
-            <img
-              src="public/og-large-screen.png"
-              class="ss"
-              alt="Screenshot of NCSBDE website from large screen"
-            />
+            <a href="https://www.ncdentalboard.org/index.htm" target="_blank"
+              ><img
+                src="public/og-phone-screen.png"
+                class="ss"
+                alt="Screenshot of NCSBDE website from phone"
+            /></a>
+            <a href="https://www.ncdentalboard.org/index.htm" target="_blank"
+              ><img
+                src="public/og-tablet-screen.png"
+                class="ss"
+                alt="Screenshot of NCSBDE website from tablet"
+            /></a>
+            <a href="https://www.ncdentalboard.org/index.htm" target="_blank">
+              <img
+                src="public/og-large-screen.png"
+                class="ss"
+                alt="Screenshot of NCSBDE website from large screen"
+              />
+            </a>
             <p class="cap">Phone (375x667px)</p>
             <p class="cap">Tablet (768x1024px)</p>
             <p class="cap">Computer (3840x2160px)</p>
@@ -76,8 +80,19 @@
           <h3>Usability Issues</h3>
           <p>
             &emsp;After exploring the NCSBDE website, I compiled this table of
-            the usability (learnability, memorability, and efficiency) and
-            accessibility issues I identified with the website.
+            the
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/"
+              >usability</a
+            >
+            (learnability, memorability, and efficiency) and accessibility
+            issues I identified with the website. To detect accessibility
+            issues, I used the tool
+            <a class="link" href="https://wave.webaim.org/" target="_blank"
+              >WebAIM WAVE</a
+            >, which automatically detects possible accessibility problems.
           </p>
           <br />
           <table>
@@ -85,10 +100,34 @@
               <th style="width: 10%">Learnability</th>
               <td>
                 <ul>
-                  <li>A</li>
-                  <li>B</li>
-                  <li>C</li>
-                  <li>D</li>
+                  <li>
+                    Since learnability refers to the ability of new users to
+                    accomplish tasks, one learnability problem is the presence
+                    of many deadlinks on the website. For example, the link to
+                    the NC Secretary of State website,
+                    <a
+                      href="www.secstate.state.nc.us"
+                      target="_blank"
+                      class="link"
+                      >www.secstate.state.nc.us</a
+                    >, is a deadlink, which is confusing for new users who don't
+                    know how to access this new page.
+                  </li>
+                  <li>
+                    The homepage links to different pages in confusing and
+                    disjointed way, since there is a header in purple of pages
+                    to navigate to, another row in red of pages below that, as
+                    well as a column along the left side of other pages. This
+                    disjoint makes it diffult for new users to find the page
+                    they need.
+                  </li>
+                  <li>
+                    Another learnability problem is that 3 more pages are hidden
+                    and only show up as a dropdown on hover over Live Scan. This
+                    makes it much more difficult for new users to find these
+                    hidden pages, including `CBC Requirements', unless they
+                    already know to look under Live Scan.
+                  </li>
                 </ul>
               </td>
             </tr>
@@ -96,7 +135,16 @@
               <th>Memorability</th>
               <td>
                 <ul>
-                  <li>A</li>
+                  <li>
+                    One memorability problem is that sheer number of navigable
+                    pages from the home page makes it difficult to remember
+                    where a page you have been to before is. Several of these
+                    links are very similar and could be consolidated for
+                    efficiency. For example, 'Anesthesia/Sedation Permits' could
+                    be a subpage of 'License & Permits'. With fewer options
+                    visible (and with each option using more space), users can
+                    more easily spacially remember what link they want to click.
+                  </li>
                   <li>B</li>
                   <li>C</li>
                   <li>D</li>
@@ -107,7 +155,37 @@
               <th>Efficiency</th>
               <td>
                 <ul>
-                  <li>A</li>
+                  <li>
+                    One strange efficiency problem is that if the user clicks
+                    the 'Verification/Disciplinary History' link on the left
+                    column, then when that page loads, several of the links in
+                    the left column disappear, inlcuding `Anesthesia/Sedation
+                    Permits'. This inconsistency in the left column nav bar is
+                    happens on several pages. This impedes efficiency because if
+                    someone needs to go to 'Verification/Disciplinary History'
+                    and then 'Anesthesia/Sedation Permits', they have to go back
+                    to the home page in between.
+                  </li>
+                  <li>
+                    Another efficiency problem with the website is that all of
+                    the links to other websites (not other pages on this
+                    website) do not open in a new window. This means that if
+                    experienced users need to go to one of those external pages,
+                    then back to the MCSBDE page, they either have to manually
+                    open new tabs or have to go back in their history. This is
+                    an efficiency issue because it impedes the speed of all
+                    users, including experienced ones.
+                  </li>
+                  <li>C</li>
+                  <li>D</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>Accessibility</th>
+              <td>
+                <ul>
+                  <li></li>
                   <li>B</li>
                   <li>C</li>
                   <li>D</li>
@@ -115,13 +193,21 @@
               </td>
             </tr>
           </table>
+          <p>&emsp;These issues impact the user experience.</p>
         </div>
       </div>
       <div id="visual" class="visual">
         <h2>Visual Redesign</h2>
+        <div class="txt-bx">
+          <p class="txt"></p>
+        </div>
       </div>
       <div id="responsive" class="responsive">
         <h2>Responsive Redesign</h2>
+        <div class="txt-bx">
+          <p class="txt"></p>
+        </div>
+        <br /><br />
         <p>
           Please reach out to
           <a class="link" href="mailto:sarah_ridley@brown.edu"
