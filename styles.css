@@ -68,14 +68,117 @@ h1 {
   font-family: Titan;
   color: #123d69;
   font-size: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
 }
 h2 {
   font-family: Titan;
   color: #19508a;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .bubble {
   padding: 0;
   margin: 0;
   width: 30px;
+}
+
+.txt-bx {
+  background-color: white;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border-radius: 25px;
+  border: 4px solid #bad5f2;
+  text-align: left;
+  padding: 40px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.intro {
+  scroll-margin-top: calc(80px);
+}
+
+.id {
+  scroll-margin-top: calc(80px);
+}
+
+.visual {
+  scroll-margin-top: calc(80px);
+}
+
+.responsive {
+  scroll-margin-top: calc(80px);
+}
+
+.name {
+  font-family: Titan;
+  padding-bottom: 10px;
+  color: #19508a;
+}
+
+.link {
+  /* text-decoration: none; */
+  color: #237ad1;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #18528c;
+}
+
+table,
+th,
+td {
+  border: 2px solid #bad5f2;
+  border-collapse: separate;
+  border-radius: 25px;
+  border-spacing: 0;
+}
+
+table {
+  background-color: #bad5f2;
+  margin: 30px;
+  margin: 30px;
+}
+
+th,
+td {
+  background-color: white;
+}
+
+h3 {
+  font-family: Titan;
+  text-align: center;
+  color: #1e66ae;
+  padding-top: 20px;
+}
+
+th {
+  background-color: #eef5fc;
+  padding: 15px;
+  text-align: center;
+  font-family: Titan;
+  color: #123d69;
+}
+
+.sss {
+  display: grid;
+  grid-template-columns: 0.29fr 0.43fr 1fr;
+  column-gap: 25px;
+  padding: 15px;
+  font-family: Titan;
+  font-size: small;
+  text-align: center;
+  color: #123d69;
+  padding-top: 20px;
+}
+
+.ss {
+  width: 100%;
+  border: 4px solid #bad5f2;
+  border-radius: 10px;
 }
