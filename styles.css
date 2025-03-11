@@ -187,8 +187,28 @@ th {
   padding-top: 20px;
 }
 
+.mobtab {
+  display: grid;
+  grid-template-columns: 1fr 1.33fr;
+  column-gap: 25px;
+  width: 60%;
+  padding-top: 20px;
+}
+
+.cap {
+  font-family: Titan;
+  font-size: small;
+  text-align: center;
+  color: #123d69;
+}
+
 .ss {
   width: 100%;
+  border: 4px solid #bad5f2;
+  border-radius: 10px;
+}
+
+.ann {
   border: 4px solid #bad5f2;
   border-radius: 10px;
 }
@@ -199,4 +219,33 @@ th {
 
 .pad {
   margin-left: 20px;
+}
+
+.figma {
+  width: 100%;
+  height: 550px;
+  border: 4px solid #bad5f2;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.annotation {
+  background-color: #eef5fc;
+  border: 4px solid #bad5f2;
+  border-radius: 25px;
+  padding: 30px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ann-txt {
+  text-align: left;
+  width: 100%;
+}
+
+li {
+  line-height: 25px;
+  margin-top: 5px;
 }

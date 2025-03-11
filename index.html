@@ -48,7 +48,7 @@
             &emsp;The below screenshots display the current North Carolina State
             Board of Dentail Examiners (NCSBDE) website at various screen widths
             (375x667px, 768x1024px, and 3840x2160px). These screen widths
-            represent the view on a phone, tablet, and computer respectively. As
+            represent the view on mobile, tablet, and computer respectively. As
             shown, the website does not consistently resize or rearrange its
             content depending on screen size, and instead, content often gets
             cut off.
@@ -73,9 +73,9 @@
                 alt="Screenshot of NCSBDE website from large screen"
               />
             </a>
-            <p class="cap">Phone (375x667px)</p>
-            <p class="cap">Tablet (768x1024px)</p>
-            <p class="cap">Computer (3840x2160px)</p>
+            <p>Mobile (375x667px)</p>
+            <p>Tablet (768x1024px)</p>
+            <p>Computer (3840x2160px)</p>
           </div>
           <h3>Usability Issues</h3>
           <p>
@@ -250,13 +250,170 @@
       <div id="visual" class="visual">
         <h2>Visual Redesign</h2>
         <div class="txt-bx">
-          <p class="txt"></p>
+          <p>
+            &emsp;After identifying these usability and accessibility issues, I
+            redesigned the home page of the NCSBDE website with these concerns
+            in mind. Before recreating the website with HTML and CSS, I created
+            a visual design style guide and mockups with the design tool Figma.
+          </p>
+          <h3>Visual Design Style Guide</h3>
+          <p>
+            &emsp;This guide contains the main colors, typography, and reusable
+            components for my mockups and redesigned webpage. Creating a
+            consistent palette and matching components improved the coordination
+            and cohesiveness of my final redesign, and ideally improves the user
+            experience. If the embedded Figma file does not load, please find it
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.figma.com/design/ud9mBbdzXejlPnn4Bm5buS/Responsive-Redesign%3A-Visual-Design-Style-Guide?node-id=0-1&t=twRUJ3igwjVqfYoz-1"
+              >here</a
+            >.
+            <iframe
+              class="figma"
+              src="https://embed.figma.com/design/SXUGpuok56VHbQY3wkgHCo/Responsive-Redesign%3A-Visual-Style-Guide?node-id=0-1&embed-host=share"
+              allowfullscreen
+            ></iframe>
+          </p>
+          <h3>Mockups</h3>
+          <p>
+            &emsp;The following mockups display my redesign of the NCSBDE home
+            page on mobile, tablet, and desktop screens. This redesign
+            prioritizes responsiveness by reusing styling, layout, and
+            components between screen sizes, while still adjusting to new
+            proportions. If the embedded Figma file does not load, please find
+            it
+            <a
+              class="link"
+              target="_blank"
+              href="https://www.figma.com/design/A6uMHLOGM2scEkHLfhESNo/Responsive-Redesign%3A-Mockups?node-id=0-1&t=3AQSzYvEnEKo3ikE-1"
+              >here</a
+            >.
+            <iframe
+              class="figma"
+              src="https://embed.figma.com/design/xepPLByYeBk62SktIQbAAP/Responsive-Redesign%3A-Mockups?node-id=0-1&embed-host=share"
+              allowfullscreen
+            ></iframe>
+          </p>
+          <h3>Annotations</h3>
+          <p>
+            &emsp;To implement the above mockups, any developer would need extra
+            details and annotations on the intensions of the design. Although I
+            implmented my own mockups, the below annotations further explore the
+            ideas behind my designs and how to bring them to life. Note that
+            none of the below screenshots are shown to scale.
+          </p>
+          <div class="annotation">
+            <div class="mobtab">
+              <img
+                src="public/redesign-mobile-mockup.png"
+                width="100%"
+                class="ann"
+                alt="Screenshot of Mobile Figma Mockup"
+              />
+              <img
+                src="public/redesign-tablet-mockup.png"
+                width="100%"
+                class="ann"
+                alt="Screenshot of Tablet Figma Mockup"
+              />
+              <p class="cap">Mobile (375x667px)</p>
+              <p class="cap">Tablet (768x1024px)</p>
+            </div>
+            <div class="ann-txt">
+              <ol>
+                <li>
+                  As visible above, my mockups for the mobile screen and tablet
+                  screen sizes are almost identical. The main difference is font
+                  size, as the mobile screen, the size of the paragraph text is
+                  12, while it is 15 on tablet.
+                </li>
+                <li>
+                  When in between tablet and mobile sizes, the text will scale
+                  according to the screen width, rather than being stagnant. The
+                  spacing will remain constant between mobile and tablet
+                  screens.
+                </li>
+                <li>
+                  Unlike on computer, on mobile and tablet, the navigation
+                  options are not visible on the header, instead they are
+                  accessed by opening the menu by pressing the hamburger button
+                  on the top right. This interaction is modeled in the Figma
+                  mockups.
+                </li>
+                <li>
+                  Similarly, the block on the computer about the functions of
+                  the NCSBDE are hidden by default, and available by pressing
+                  the information button to the left of the hamburger button.
+                  This is also modeled in the mockups.
+                </li>
+                <li>
+                  The header will be sticky, and stay in place as the user
+                  scrolls along the page.
+                </li>
+                <li>
+                  The NCSBDE logo at the top right of the header will be a link
+                  back to the top of this home page.
+                </li>
+                <li>
+                  The header will be a grid layout, with 3 columns. The logo
+                  will be the first column, and its left margin will be
+                  specified to keep it oriented left. The second and third
+                  columns will contain the info and hamburger buttons, and their
+                  right margins will keep them pushed towards the right of the
+                  screen.
+                </li>
+                <li>
+                  The hamburger and info popups, which are initially hidden,
+                  will be flexboxes with a column display, so that the options
+                  list down the screen, and each take up as much space as the
+                  screen height allows. Also, these popup components will scroll
+                  so that if some of the text is hidden, the user can navigate
+                  to it.
+                </li>
+                <li>
+                  Each of the items under Table of Contents is a link that
+                  brings the user to that section of the page.
+                </li>
+                <li>
+                  The page's content itself will remain as a block display, and
+                  any overflown content will be able to be scrolled down to.
+                  There should be no horizontal overflow.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="annotation">
+            <img
+              src="public/redesign-computer-mockup.png"
+              width="60%"
+              class="ann"
+              alt="Screenshot of Computer Figma Mockup"
+            />
+            <p class="cap">Computer (3840x2160px)</p>
+          </div>
         </div>
       </div>
       <div id="responsive" class="responsive">
         <h2>Responsive Redesign</h2>
         <div class="txt-bx">
-          <p class="txt"></p>
+          <p>
+            &emsp;The final deployment of my redesigned NCSBDE website can be
+            found <a class="link" target="_blank">here</a>. The below
+            screenshots demonstrate the redesigned website on mobile, tablet,
+            and computer screens.
+          </p>
+          <p>
+            &emsp;As my screenshots demonstrate, my redesign faithfully
+            implements my Visual Style Design Guide and my Mockups. This
+            redesign was a valuable exercise in critiquing the usability,
+            accessibility, and responsiveness of an existing website, and then
+            putting my observations into practice. I found it suprising how many
+            important websites lack responsive features, impeding the user
+            experience and making actions more difficult. However, I also
+            learned that building a responsive website is not always simple, and
+            takes careful thought and planning.
+          </p>
         </div>
         <br /><br />
         <p>
