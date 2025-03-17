@@ -437,28 +437,33 @@
                   rearrange themselves based on screen width.
                 </li>
                 <li>
-                  The main content of the page will be a grid with two columns.
-                  The left column contains the main content, and will scroll
-                  vertically but not horizontally. There should be no horizontal
-                  overflow, as the text should wrap to the next line. The right
-                  column contains an image and the 'Functions of the Board...',
-                  and will be sticky and will not scroll with the page.
+                  The search bar and the search button will be grouped within a
+                  div in the right column of the header. This will allow me to
+                  control the spacing between the search bar and button
+                  differently than the spacing between the other header
+                  components (Home, About, etc).
+                </li>
+                <li>
+                  The content of the page will be a grid with two columns. The
+                  left column contains the majority of the textual information,
+                  and will scroll vertically but not horizontally. There should
+                  be no horizontal overflow, as the text should wrap to the next
+                  line. The right column contains an image and the 'Functions of
+                  the Board...', and will be sticky and will not scroll with the
+                  page.
+                </li>
+                <li>
+                  The left column will scroll. The table of contents in the left
+                  column will contain hyperlinks to different sections of the
+                  page to enable quick navigation.
                 </li>
                 <li>
                   This sticky right column, containing an image and the
                   'Functions of the Board...', will itself be a grid with two
                   rows. This will allow the image and the textbox to fit to
-                  adjust the height of the screen.
-                </li>
-                <li>
-                  The footer will also be sticky, and remain visible at the
-                  bottom of the page as the user scrolls. This keeps the
-                  NCSBDE's contact information visible at all times.
-                </li>
-                <li>
-                  The footer itself will also be layed out as a flexbox with row
-                  display, and space-around justification. This will allow each
-                  piece of contact information to space itself out.
+                  adjust the height of the screen. The font size inside this
+                  textbox will adjust based on the screen width and height so
+                  that it looks like it fits the space.
                 </li>
                 <li>
                   The text size of the main paragraph content on computer is
@@ -486,9 +491,14 @@
         <div class="txt-bx">
           <p>
             &emsp;The final deployment of my redesigned NCSBDE website can be
-            found <a class="link" target="_blank">here</a>. The below
-            screenshots demonstrate the redesigned website on mobile, tablet,
-            and computer screens.
+            found
+            <a
+              class="link"
+              target="_blank"
+              href="https://22ridley.github.io/ncdentalboard/"
+              >here</a
+            >. The below screenshots demonstrate the redesigned website on
+            mobile, tablet, and computer screens.
           </p>
           <p>
             &emsp;As my screenshots demonstrate, my redesign faithfully
