@@ -175,7 +175,8 @@ th {
   color: #123d69;
 }
 
-.sss {
+.sss,
+.sss2 {
   display: grid;
   grid-template-columns: 0.29fr 0.43fr 1fr;
   column-gap: 25px;
@@ -185,6 +186,10 @@ th {
   text-align: center;
   color: #123d69;
   padding-top: 20px;
+}
+
+.sss2 {
+  grid-template-columns: 0.315fr 0.425fr 1fr;
 }
 
 .mobtab {
