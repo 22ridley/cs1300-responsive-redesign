@@ -167,6 +167,19 @@ h3 {
   padding-bottom: 10px;
 }
 
+.ann-txt h3 {
+  text-align: left;
+  padding-bottom: 0;
+  padding-top: 0;
+  color: #123d69;
+  font-size: medium;
+}
+
+.annotation h3 {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 th {
   background-color: #eef5fc;
   padding: 15px;

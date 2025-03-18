@@ -350,12 +350,14 @@
           <h3>Implementation Notes</h3>
           <p>
             &emsp;To implement the above mockups, any developer would need extra
-            details and annotations on the intensions of the design. The below
+            details and annotations on the intentions of the design. The below
             annotations further explore the ideas behind my designs and how to
-            bring them to life. Note that none of the screenshots below are
-            shown to scale.
+            bring them to life. The mobile and tablet redesigns are grouped and
+            the computer redesign is separate, since tablet and mobile have a
+            lot in common (although their differences are described below).
           </p>
           <div class="annotation">
+            <h3>Mobile/Tablet</h3>
             <div class="mobtab">
               <a
                 href="https://www.figma.com/design/xepPLByYeBk62SktIQbAAP/Responsive-Redesign%3A-Mockups?node-id=0-1&t=35Yh78ogCzKtLB2L-1"
@@ -380,38 +382,43 @@
             </div>
             <div class="ann-txt">
               <ol>
+                <h3>Differences</h3>
                 <li>
-                  As visible above, my mockups for the mobile screen and tablet
-                  screen sizes are almost identical. The main difference is font
-                  size, as the mobile screen, the default size of the paragraph
-                  text is 12px, while it is 15px on tablet.
+                  As visible above, my structure of the mockups for the mobile
+                  screen and tablet screen sizes are very similar. The main
+                  difference is font size, as on the mobile screen, the default
+                  size of the paragraph text is 12px, while it is 15px on
+                  tablet.
                 </li>
                 <li>
-                  When in between tablet and mobile sizes, the text will scale
-                  according to the screen width, rather than being stagnant. The
-                  spacing will remain constant between mobile and tablet
-                  screens.
+                  Regarding moving in between tablet and mobile sizes, the text
+                  size will scale according to the screen width, instead of
+                  scaling up at a specific threshold. The horizontal and
+                  vertical margins will also scale with screen dimensions, and
+                  the defualt margins are 5vh and 5vw.
+                </li>
+                <h3>Similarities</h3>
+                <li>
+                  On both mobile and tablet (and unlike computer), the
+                  navigation options are not visible along the header, instead
+                  they are accessed by opening the menu by pressing the
+                  hamburger button on the top right. This interaction is modeled
+                  in the Figma mockups.
                 </li>
                 <li>
-                  Unlike on computer, on mobile and tablet, the navigation
-                  options are not visible on the header, instead they are
-                  accessed by opening the menu by pressing the hamburger button
-                  on the top right. This interaction is modeled in the Figma
-                  mockups.
+                  Similarly, the information bubble on the computer about the
+                  'Functions of the Board...' is hidden by default, and
+                  available by pressing the information button to the left of
+                  the hamburger button. This is also modeled in the mockups.
                 </li>
                 <li>
-                  Similarly, the block on the computer about the functions of
-                  the NCSBDE are hidden by default, and available by pressing
-                  the information button to the left of the hamburger button.
-                  This is also modeled in the mockups.
+                  The header and its buttons will be sticky, and stay in place
+                  as the user scrolls along the page.
                 </li>
                 <li>
-                  The header will be sticky, and stay in place as the user
-                  scrolls along the page.
-                </li>
-                <li>
-                  The NCSBDE logo at the top right of the header will be a link
-                  back to the top of this homepage.
+                  The NCSBDE logo will be fully contained in the header, unlike
+                  how it sits halfway out of the header on the computer. This
+                  logo will be a link back to the top of this homepage.
                 </li>
                 <li>
                   The header will be a grid layout, with 3 columns. The logo
@@ -442,6 +449,7 @@
             </div>
           </div>
           <div class="annotation">
+            <h3>Computer</h3>
             <a
               href="https://www.figma.com/design/xepPLByYeBk62SktIQbAAP/Responsive-Redesign%3A-Mockups?node-id=0-1&t=35Yh78ogCzKtLB2L-1"
               target="_blank"
@@ -581,10 +589,12 @@
             implements my Visual Style Design Guide and my mockups. This
             redesign was a valuable exercise in critiquing the usability,
             accessibility, and responsiveness of an existing website, and then
-            putting my observations into practice. I found it suprising how many
-            important websites like the NCSBDE homepage lack responsive
-            features, impeding the user experience and making actions more
-            difficult. However, I also learned that building a responsive
+            putting my observations into practice. The
+            <a class="link" href="#visual">Visual Redesign</a> section
+            specifically describes how I improved these areas. I found it
+            suprising how many important websites like the NCSBDE homepage lack
+            responsive features, impeding the user experience and making actions
+            more difficult. However, I also learned that building a responsive
             website is not at all simple, and takes careful thought, planning,
             and iteration.
           </p>
