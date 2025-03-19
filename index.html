@@ -170,14 +170,22 @@
                 <ul>
                   <li>
                     One strange efficiency problem is that if the user clicks
-                    the 'Verification/Disciplinary History' link on the left
-                    column, several of the links in the left column disappear,
-                    including `Anesthesia / Sedation Permits'. This
-                    inconsistency in the left column nav bar happens on several
-                    pages. This impedes efficiency because if someone needs to
-                    go to 'Verification/Disciplinary History' and then
+                    'Verification/Disciplinary History' on the left column,
+                    several other links in the left column disappear, including
+                    `Anesthesia/ Sedation Permits'. This inconsistency in the
+                    left column nav bar happens on several pages. This impedes
+                    efficiency because if someone needs to go to
+                    'Verification/Disciplinary History' and then
                     'Anesthesia/Sedation Permits', they have to go back to the
                     homepage in between.
+                  </li>
+                  <li>
+                    Additionally, the height of this homepage impedes
+                    efficiency, given that this single homepage is incredibly
+                    long and has 25 subsections. There is no table of contents
+                    nor hyperlinks to these subsubsections, so even experienced
+                    users who know where they need to go still have to spend a
+                    lot of time scrolling to get there.
                   </li>
                   <li>
                     Another efficiency problem with the homepage is that none of
@@ -187,14 +195,6 @@
                     have to manually open new tabs or have to go back in their
                     history. This is an efficiency issue because it impedes the
                     speed of all users, including experienced ones.
-                  </li>
-                  <li>
-                    Additionally, the height of this homepage impedes
-                    efficiency, given that this single homepage is incredibly
-                    long and has 25 subsections. There is no table of contents
-                    nor hyperlinks to these subsubsections, so even experienced
-                    users who know where they need to go still have to spend a
-                    lot of time scrolling to get there.
                   </li>
                 </ul>
               </td>
@@ -243,7 +243,7 @@
           <p>
             &emsp;As described, the NCSBDE website suffers from a variety of
             learnability, memorability, efficiency, and accessibly issues. The
-            most common themes are the confusing nature of the 3 separate nav
+            common themes are the confusing nature of the 3 separate nav
             components, the lack of color coordination, the long height of the
             page and lack of structure, and the lack of responsiveness to narrow
             screens. Addressing each problem would improve the user experience
@@ -312,14 +312,15 @@
               internal links are all within the header and the dropdowns from
               the header. On mobile and tablet, these internal links are within
               the hamburger popup. Consolidating these links from 3 locations
-              into only 1 makes the homepage more learnable because it makes
-              navigating the site easier for first-time users.
+              into only 1 component makes the homepage more learnable because it
+              centralizes navigation and simplifies the experience for
+              first-time users.
             </li>
             <li>
               <b>Memorability:</b> I addressed memorability by coordinating the
               color palette and reducing the number of internal links in the
               header/hamburger popup. First, I made the header, as well as all
-              subsections of the homepage the color grape, to unify the
+              subsections of the homepage, the color 'grape' to unify the
               navigational components of the page. By reducing the color palette
               to only a few coordinated accent colors, the page is more cohesive
               and its elements are more memorable to returning users. Also,
@@ -353,8 +354,8 @@
             details and annotations on the intentions of the design. The below
             annotations further explore the ideas behind my designs and how to
             bring them to life. The mobile and tablet redesigns are grouped and
-            the computer redesign is separate, since tablet and mobile have a
-            lot in common (although their differences are described below).
+            the computer redesign is separate, since mobile and tablet have a
+            lot in common (although their differences are highlighted below).
           </p>
           <div class="annotation">
             <h3>Mobile/Tablet</h3>
@@ -387,15 +388,16 @@
                   As visible above, my structure of the mockups for the mobile
                   screen and tablet screen sizes are very similar. The main
                   difference is font size, as on the mobile screen, the default
-                  size of the paragraph text is 12px, while it is 15px on
-                  tablet.
+                  size of the paragraph text is 12 pixels, while it is 15 pixels
+                  on tablet. The font size for the various headers is similarly
+                  larger on tablet.
                 </li>
                 <li>
-                  Regarding moving in between tablet and mobile sizes, the text
-                  size will scale according to the screen width, instead of
-                  scaling up at a specific threshold. The horizontal and
-                  vertical margins will also scale with screen dimensions, and
-                  the defualt margins are 5vh and 5vw.
+                  Regarding moving in between mobile and tablet sizes, the text
+                  size will consistently scale according to the screen width,
+                  instead of jumping up at a specific threshold. The horizontal
+                  and vertical margins will also scale with screen dimensions,
+                  and the defualt margins are 5vh and 5vw.
                 </li>
                 <h3>Similarities</h3>
                 <li>
@@ -469,15 +471,16 @@
             <div class="ann-txt">
               <ol>
                 <li>
-                  Unlike the tablet and mobile displays, on the computer
+                  Unlike the mobile and tablet displays, on the computer
                   display, the main groups for the navigation options are
                   displayed along the header. As shown in the Figma mockups,
-                  when you hover on an option, its font become slightly darker,
-                  and when you click on one of these options, a popup window
-                  appears and displays the links within that group.
+                  when you hover on an option, its font become slightly darker
+                  and a popup window appears, displaying the links within that
+                  group. The text of these internal popup links becomes lighter
+                  on hover, as also displayed in the Figma mockups.
                 </li>
                 <li>
-                  Like on tablet and mobile, the header is sticky, and remains
+                  Like on mobile and tablet, the header is sticky, and remains
                   at the top of the page as you scroll. This keeps the
                   navigation accessible on all parts of the page, unlike on the
                   original page, where you have to scroll back up to the top.
@@ -501,21 +504,22 @@
                   components (Home, About, etc).
                 </li>
                 <li>
-                  The content of the page will be a grid with two columns. The
-                  left column contains the majority of the textual information,
-                  and will scroll vertically but not horizontally. There should
-                  be no horizontal overflow, as the text should wrap to the next
-                  line. The right column contains an image and the 'Functions of
-                  the Board...', and will be sticky and will not scroll with the
-                  page.
+                  The content of the page will be a grid with three columns. The
+                  left column contains the textual information, and will scroll
+                  vertically but not horizontally. There should be no horizontal
+                  overflow, as the text should wrap to the next line. The right
+                  column contains an image and the 'Functions of the Board...',
+                  and will be sticky and will not scroll with the page. The
+                  middle column will only contain the vertical dividing line.
                 </li>
                 <li>
                   The left column will scroll. The table of contents in the left
                   column will contain hyperlinks to different sections of the
-                  page to enable quick navigation.
+                  page to enable quick navigation. The links in the tableof
+                  contents will become lighter on hover.
                 </li>
                 <li>
-                  This sticky right column, containing an image and the
+                  The sticky right column, containing an image and the
                   'Functions of the Board...', will itself be a grid with two
                   rows. This will allow the image and the textbox to fit to
                   adjust the height of the screen. The font size inside this
@@ -523,12 +527,12 @@
                   that it looks like it fits the space.
                 </li>
                 <li>
-                  The text size of the main paragraph content on computer is
-                  20px, but will not scale down to 15px for tablet until the
-                  screen's width is less than 1100 pixels. This will ensure that
-                  the font size doesn't change if the user enlarges or shrinks
-                  their window on their computer by a little bit, which could be
-                  disorienting.
+                  The text size of the main paragraph content on computer is 20
+                  pixels, but will not scale down to 15 pixels for tablet until
+                  the screen's width is less than 800 pixels. This will ensure
+                  that the font size doesn't change if the user enlarges or
+                  shrinks their window on their computer by a little bit, which
+                  could be disorienting.
                 </li>
                 <li>
                   The left and right margins of the computer display will not be
@@ -589,7 +593,7 @@
             implements my Visual Style Design Guide and my mockups. This
             redesign was a valuable exercise in critiquing the usability,
             accessibility, and responsiveness of an existing website, and then
-            putting my observations into practice. The
+            putting my observations into practice. For reference, the
             <a class="link" href="#visual">Visual Redesign</a> section
             specifically describes how I improved these areas. I found it
             suprising how many important websites like the NCSBDE homepage lack
